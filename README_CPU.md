@@ -65,6 +65,5 @@ NeuroSim 2DInference V1.4
 - **Output Results**
     - log/default/test_logYYYY_MM_DD_HH_MM_SS or *.err file
     - layer_record_<ModelName>/output_layer_0.txt, output_layer_1.txt, ..., trace_command.sh
-        - 
 
 
