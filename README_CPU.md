@@ -6,22 +6,22 @@ NeuroSim 2DInference V1.4
 - Change remainderQ = remainderQ + remainderQ * torch.normal(0., torch.full(remainderQ.size(), self.vari, device='cuda'))
 - Into remainderQ = remainderQ + remainderQ * torch.normal(0., torch.full(remainderQ.size(), self.vari, device=remainderQ.device))
 
-### Installation steps (Linux + Anaconda/Miniconda)
+### Installation Steps (Linux + Anaconda/Miniconda)
 - Reference to original README file 
 
-### How to run DNN +NeuroSim 
+### How to Run DNN +NeuroSim 
 
-- **Get the tool from GitHub**
+- Get the tool from GitHub
     - git clone -b 2DInferenceV1.4 --single-branch https://github.com/neurosim/NeuroSim.git
     - cd NeuroSim
 
-- **Create a conda environment**
+- Create a conda environment
     - conda create --name neurosim
 
 - **Activate neurosim environment**
     - conda activate neurosim
 
-- **Download and install PyTorch packages**
+- Download and install PyTorch packages
     - conda install pytorch torchvision torchaudio pytorch-cuda=11.7 -c pytorch -c nvidia
 
 - **Pick a network architecture. The following have been pre-trained and provided with NeuroSim**
@@ -67,3 +67,4 @@ NeuroSim 2DInference V1.4
     - layer_record_<ModelName>/output_layer_0.txt, output_layer_1.txt, ..., trace_command.sh
 
 
+:wq
