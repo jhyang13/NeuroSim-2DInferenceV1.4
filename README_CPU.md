@@ -11,17 +11,17 @@ NeuroSim 2DInference V1.4
 
 ### How to Run DNN +NeuroSim 
 
-- Get the tool from GitHub
+- **Get the tool from GitHub**
     - git clone -b 2DInferenceV1.4 --single-branch https://github.com/neurosim/NeuroSim.git
     - cd NeuroSim
 
-- Create a conda environment
+- **Create a conda environment**
     - conda create --name neurosim
 
 - **Activate neurosim environment**
     - conda activate neurosim
 
-- Download and install PyTorch packages
+- **Download and install PyTorch packages**
     - conda install pytorch torchvision torchaudio pytorch-cuda=11.7 -c pytorch -c nvidia
 
 - **Pick a network architecture. The following have been pre-trained and provided with NeuroSim**
@@ -31,6 +31,7 @@ NeuroSim 2DInference V1.4
 
 - **(Optional) Train the network to get the model for inference**
     - ~/Inference_pytorch/models/VGG.py
+
 - **Define Network Structure in ~/Inference_pytorch/NeuroSIM/NetWork_*.csv**
     - VGG-8 (CIFAR-10)	A VGG-8 network architecture used for inference tasks on the CIFAR-10 dataset.
     - AlexNet	        One of the earliest CNN architectures, originally designed for ImageNet classification.
@@ -66,4 +67,7 @@ NeuroSim 2DInference V1.4
 - **Output Results**
     - log/default/test_logYYYY_MM_DD_HH_MM_SS or *.err file
     - layer_record_<ModelName>/output_layer_0.txt, output_layer_1.txt, ..., trace_command.sh
+
+
+
 
