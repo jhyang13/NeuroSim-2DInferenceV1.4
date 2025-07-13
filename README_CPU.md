@@ -30,8 +30,8 @@ NeuroSim 2DInference V1.4
     - ResNet18 on imagenet: "FP" mode pretrained model is loaded from 'https://download.pytorch.org/models/resnet18-5c106cde.pth'
 
 - **(Optional) Train the network to get the model for inference**
-
-- **Define Network Structure in ~/NeuroSim/Inference_pytorch/NeuroSIM/NetWork_*.csv**
+    - ~/Inference_pytorch/models/VGG.py
+- **Define Network Structure in ~/Inference_pytorch/NeuroSIM/NetWork_*.csv**
     - VGG-8 (CIFAR-10)	A VGG-8 network architecture used for inference tasks on the CIFAR-10 dataset.
     - AlexNet	        One of the earliest CNN architectures, originally designed for ImageNet classification.
     - VGG-16            A deeper version of the VGG network, widely used in image recognition tasks.
@@ -39,7 +39,7 @@ NeuroSim 2DInference V1.4
     - Default VGG-8 with 8 layers
         - Layer 1 to layer 6 are convolutional layers, and layer 7 to layer 8 are fully connected layers
 
-- **Modify the hardware parameters in ~/NeuroSim/Inference_pytorch/NeuroSIM/Param.cpp**
+- **Modify the hardware parameters in ~/Inference_pytorch/NeuroSIM/Param.cpp**
     - technology node (technode)
     - device type (memcelltype: SRAM, eNVM or FeFET)
     - operation mode (operationmode: parallel or sequential analog)
