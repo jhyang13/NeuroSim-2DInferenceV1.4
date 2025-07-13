@@ -53,6 +53,7 @@ NeuroSim 2DInference V1.4
 - **Compilation of NeuroSim**
     - cd Inference_pytorch/NeuroSIM
     - make
+    - or make clean
 
 - **Run the program with PyTorch wrapper**
     - cd ..
